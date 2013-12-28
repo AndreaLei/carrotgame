@@ -1,0 +1,62 @@
+.exampleDiv {
+	height: 600px;
+	width: 1200px;
+	border: 1px solid rgba(0,0,0,0.1);
+	float:right;
+	margin: 20px;
+	text-align:center;
+	position:relative;
+	background: transparent url(bg.png) 100% no-repeat;
+}
+
+
+.bunny {
+	position:absolute;
+	height:75px;
+	width:65px;
+	bottom:550px;
+	background:transparent url(bunny.png); 50% no-repeat;
+	-webkit-animation: yy 6s 15 linear;
+	-moz-animation: yy 2s 15 linear;
+}
+
+.carrot {
+	position:absolute;
+	height: 75px;
+	width: 65px;
+	border-radius: 0px;
+	background: transparent url(carrot.png) 50% no-repeat;
+	-webkit-animation: yy 5s 15 linear;
+	-moz-animation: yy 2s 15 linear;
+}
+
+
+@-webkit-keyframes yy {
+	 40%, 70%, 90%{
+		bottom: 0;
+		-webkit-animation-timing-function: ease-out;
+	
+	}
+	0% {
+		bottom: 555px;
+		left: 0;
+		-webkit-animation-timing-function: ease-in;
+	}
+	55% {
+		bottom: 450px;
+		-webkit-animation-timing-function: ease-in;
+	}
+	80% {
+		bottom: 250px;
+		-webkit-animation-timing-function: ease-in;
+	}
+	95% {
+		bottom: 80px;
+		-webkit-animation-timing-function: ease-in;
+	}
+	100% {
+		left: 1180px;
+		bottom: 0;
+		-webkit-animation-timing-function: ease-out;	
+	}
+}
